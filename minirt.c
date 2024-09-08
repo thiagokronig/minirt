@@ -6,10 +6,13 @@
 /*   By: thiagokronig <thiagokronig@gmail.com>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/08 15:22:10 by thiagokroni       #+#    #+#             */
-/*   Updated: 2024/09/08 15:31:45 by thiagokroni      ###   ########.fr       */
+/*   Updated: 2024/09/08 15:54:54 by thiagokroni      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	main(void)
+#include <stdlib.h>
+
+int	main(void)
 {
+	return (EXIT_SUCCESS);
 }

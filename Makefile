@@ -1,4 +1,5 @@
 NAME = minirt
+CFLAGS = -O3 -Wall -Wextra -Werror
 
 all: minirt
 
