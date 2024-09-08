@@ -1,3 +1,5 @@
 minirt
-*.o
+tuple_test
 norminette/
+*.o
+*.d

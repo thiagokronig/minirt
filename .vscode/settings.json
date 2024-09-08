@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "math.h": "c",
+        "stdlib.h": "c",
+        "tuple.h": "c",
+        "assert.h": "c"
+    }
+}
