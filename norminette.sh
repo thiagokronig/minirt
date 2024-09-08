@@ -15,7 +15,7 @@ install() {
 run() {
     (
         source "norminette/bin/activate"
-        norminette/bin/norminette
+        ls *.c *.h | grep -v -- _test\. | xargs norminette/bin/norminette
     )
 }
 
