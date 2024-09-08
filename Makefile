@@ -2,8 +2,11 @@ NAME = minirt
 CFLAGS = -O3 -Wall -Wextra -Werror -Wconversion
 LDLIBS = -lm
 SRCS = \
+	canvas_test.c \
+	canvas.c \
 	color_test.c \
 	color.c \
+	ft.c \
 	math.c \
 	minirt.c \
 	tuple_dot.c \
@@ -33,7 +36,7 @@ include $(SRCS:.c=.d)
 
 .PHONY: clean fclean test_norminette test_tuple
 
-test: re test_norminette test_tuple test_color
+test: re test_norminette test_tuple test_color test_canvas
 
 test_norminette:
 	bash ./norminette.sh
@@ -47,3 +50,8 @@ test_color: color_test
 	./color_test
 
 color_test: color.o math.o
+
+test_canvas: canvas_test
+	./canvas_test
+
+canvas_test: canvas.o color.o ft.o math.o
