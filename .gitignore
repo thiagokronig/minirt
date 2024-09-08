@@ -1,6 +1,8 @@
 minirt
+canvas_test
 color_test
 tuple_test
 norminette/
 *.o
 *.d
+.vscode/settings.json
