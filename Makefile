@@ -8,6 +8,8 @@ SRCS = \
 	color.c \
 	ft.c \
 	math.c \
+	matrix_test.c \
+	matrix.c \
 	minirt.c \
 	tuple_dot.c \
 	tuple_point.c \
@@ -36,7 +38,7 @@ include $(SRCS:.c=.d)
 
 .PHONY: clean fclean test_norminette test_tuple
 
-test: re test_norminette test_tuple test_color test_canvas
+test: re test_norminette test_tuple test_color test_canvas test_matrix
 
 test_norminette:
 	bash ./norminette.sh
@@ -55,3 +57,8 @@ test_canvas: canvas_test
 	./canvas_test
 
 canvas_test: canvas.o color.o ft.o math.o
+
+test_matrix: matrix_test
+	./matrix_test
+
+matrix_test: matrix.o matrix_mul.o ft.o math.o
